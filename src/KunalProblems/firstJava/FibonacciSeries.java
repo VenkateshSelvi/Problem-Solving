@@ -9,6 +9,7 @@ public class FibonacciSeries {
         int num = scan.nextInt();
         int a = 0, b = 1, sum = 0, count = 2;
         while(num!=count) {
+            sum = a+b;
             a = b;
             b = sum;
             count++;
