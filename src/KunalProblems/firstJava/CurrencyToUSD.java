@@ -7,6 +7,6 @@ public class CurrencyToUSD {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter currency: ");
         double currency = scan.nextDouble();
-        System.out.println(currency/83.43);
+        System.out.println(currency/83.30);
     }
 }

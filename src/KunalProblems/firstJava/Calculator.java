@@ -11,15 +11,12 @@ public class Calculator {
         int num2 = scan.nextInt();
         System.out.print("Enter operator: ");
         String operator = scan.next();
-        if(operator.equals("+"))
-            System.out.println(num1+num2);
-        else if(operator.equals("-"))
-            System.out.println(num1-num2);
-        else if(operator.equals("*"))
-            System.out.println(num1*num2);
-        else if(operator.equals("/"))
-            System.out.println(num1/num2);
-        else
-            System.out.println("Enter a valid operators(+-*/)");
+        switch (operator) {
+            case "+" -> System.out.println(num1 + num2);
+            case "-" -> System.out.println(num1 - num2);
+            case "*" -> System.out.println(num1 * num2);
+            case "/" -> System.out.println(num1 / num2);
+            default -> System.out.println("Enter a valid operators(+-*/)");
+        }
     }
 }
